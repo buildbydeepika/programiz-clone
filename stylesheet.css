@@ -1,0 +1,244 @@
+/* global css  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+    --smoke: #d7d7d7;
+    --dark-blue: #25265e;
+    --dark-gray: #616a8a;
+    --gray: #9cabbb;
+    --blue: #0556f3;
+    --purple: #5805ff;
+
+
+}
+
+/*-------------- navbar----------------------- */
+.navbar {
+    min-height: 8vh;
+    box-shadow: #d7d7d7 2px 3px 30px;
+    display: flex;
+    align-items: center;
+    padding: 0em 0em 0em 10em;
+    min-width: 35rem;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a,
+form {
+    text-decoration: none;
+    padding-left: 2em;
+    padding-right: 1.5em;
+    color: #2d344c;
+    font-size: .8rem;
+
+}
+
+#nav-link1 {
+    color: var(--purple);
+}
+
+.navbar img {
+    width: 6rem;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.input1 {
+    width: 9rem;
+    background: transparent;
+    border: 0;
+}
+
+.input1:hover {
+    border-color: var(--smoke);
+}
+
+
+.search img {
+    width: 1rem;
+
+}
+
+@media screen and (max-width:1199px) {}
+
+/* ---------------------main heading section ---------------------------*/
+
+.secondary-para {
+    font-size: .9rem;
+    color: var(--dark-gray);
+    font-weight: bold;
+
+}
+
+.secondary-para p {
+    margin-bottom: 20px;
+}
+
+.heading-section {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 0em 0em 10em;
+    justify-content: center;
+    max-width: 23rem;
+
+}
+
+.head-para {
+    margin: 19px 0 46px 0px;
+}
+
+.main-heading-section {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.main-heading-section img {
+    width: 24rem;
+    padding-top: 4rem;
+
+}
+
+/* --------------------------------mail-box-------------------------------- */
+
+.mail-box {
+    min-width: 45rem;
+}
+
+.mail-box input {
+    border: var(--gray) 1px solid;
+    padding: .6em .6em;
+    border-right: transparent;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    outline: none;
+}
+
+
+.mail-box input:hover,
+.mail-box input:focus {
+    border-color: var(--blue);
+}
+
+.mail-box button {
+    background-color: var(--blue);
+    color: white;
+    border: 1px solid var(--blue);
+    padding: .6em 1em;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: -6px;
+    font-weight: bold;
+}
+
+.mail-box button:hover {
+    background-color: #1048b8;
+}
+
+
+/* -----------------------cards--------------------- */
+.card ul {
+    display: grid;
+    gap: 2.6rem;
+    width: max-content;
+    height: 40rem;
+
+}
+
+/* .card .card-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    gap: 2.8rem;
+    flex-direction: column;
+} */
+.card .card-list {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    gap: 2.8rem;
+    flex-direction: column;
+
+}
+
+
+ul .list-item {
+    flex-direction: column;
+    flex-grow: 1;
+    height: 218px;
+    width: 175px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: #9cabbb6f 2px 3px 30px;
+    list-style: none;
+    border: 1px solid #9cabbb4a;
+}
+
+
+ul .list-item:hover {
+    transform: scale(1.1);
+    transition-duration: .2s;
+}
+
+
+.list-item h3 {
+    margin-top: 15px;
+    font-size: 1rem;
+    margin-left: 10px;
+    color: var(--dark-blue);
+}
+
+.list-item h4 {
+    color: var(--blue);
+    padding: 44px 31px;
+}
+
+.list-item h4:hover {
+    color: var(--dark-blue);
+
+}
+
+.card-list li img {
+    height: 82px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card-section {
+    display: flex;
+    width: 10rem;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 4rem;
+
+}
+
+.card-section .head-section {
+    height: 23px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 145px;
+}
+
+
+/* utility classes */
+
+.heading {
+    color: var(--dark-blue);
+    font-size: 1.9rem;
+    font-weight: 900;
+}
+
+.para {
+    color: var(--dark-gray);
+    font-size: .9rem;
+}
